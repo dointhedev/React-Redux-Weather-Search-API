@@ -36,8 +36,8 @@ class SearchBar extends Component {
             <Container className="search">
                 <Card className="mt-2 mb-3">
                     <CardHeader className="blue-bg text-white">
-                        <h4>Search&nbsp;
-                            <b>Weather</b>
+                        <h4>Search Weather By&nbsp;
+                            <b>City</b>
                         </h4>
                     </CardHeader>
                     <CardBody className="d-flex justify-content-center">
