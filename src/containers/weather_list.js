@@ -3,19 +3,14 @@ import {Container, Card, CardHeader, CardBody, Table} from 'reactstrap';
 import {connect} from 'react-redux';
 
 class WeatherList extends Component {
-    renderWeather(cityData) { 
+    renderWeather(cityData) {
         return (
-            <tr>
-            <td> {cityData.city.name}</td>  
+            <tr key={cityData.city.id}>
+                <td>{cityData.city.name}</td>
             </tr>
         );
-            // return (
-            //     <tr>
-            //     <td> {cityData !== undefined ? cityData.name : 'No cities Selected' }</td>  
-            //     </tr>
-            // );
-        }
- 
+    }
+
     render() {
         return (
             <Container>
@@ -38,7 +33,10 @@ class WeatherList extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                            {this.props.weather.map(this.renderWeather)}
+                                {this
+                                    .props
+                                    .weather
+                                    .map(this.renderWeather)}
                             </tbody>
                         </Table>
                     </CardBody>
@@ -53,4 +51,3 @@ function mapStateToProps({weather}) {
 }
 
 export default connect(mapStateToProps)(WeatherList);
-
