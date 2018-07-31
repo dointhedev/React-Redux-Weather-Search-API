@@ -1,0 +1,36 @@
+
+.blue-bg {
+    background: #435d7d;
+}
+.search-bar form{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+.search-bar input{
+    width: 600px !important;
+}
+
+.list-group img {
+    max-width: 35%;
+}
+.list-group img {
+    max-width: 40%;
+    max-height: 7rem !important;
+}
+.vid-list {
+    display: flex;
+    flex-direction: row;
+}
+.vid-list:hover {
+    background-color: #dfdfdf;
+}
+p.card-text {
+    font-size: 0.9rem;
+}
+h5.card-title {
+    font-size: 1rem;
+}
+.search .btn {
+    border-radius: 0rem .25rem .25rem .0rem;
+}
